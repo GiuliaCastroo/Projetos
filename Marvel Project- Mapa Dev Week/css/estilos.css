@@ -1,6 +1,3 @@
-
-/* Corpo da página*/
-
 body{
     font-family: 'ssf4', Courier, monospace;
     background: var(--cor-secundaria);
@@ -24,9 +21,6 @@ main{
     justify-content: center;
 }
 
-
-
-/* TITULO*/
 .cabecalho{
     z-index: 1;
     display: flex;    
@@ -41,8 +35,6 @@ main{
     -webkit-text-stroke: 2px var(--cor-titulo-forte);
 }
 
-
-/* Seleção dos personagens grandes que ficam nas bordas*/
 .selecao-de-personagens{
     display: flex;
     align-items: center;
@@ -63,10 +55,7 @@ main{
     transform: translate(-50%, -50%);
 }
 
-
-
-/* Nome do personagem*/
-.selecao-de-personagens .personagem-grande .nome ::before{
+.selecao-de-personagens .personagem-grande .nome::before{
     content: '';
     height: 30px;
     width: 100%;
@@ -84,10 +73,6 @@ main{
     font-size: 27px;
 }
 
-
-
-
-/* Essa parte do before pra dar cor no nome da seleção não está funcionando */
 .selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome::before{
     background-color: var(--cor-azul-principal);
 }
@@ -96,11 +81,6 @@ main{
     background-color: var(--cor-vermelha-principal);
 }
 
-/* Essa parte do before pra dar cor no nome da seleção não está funcionando */
-
-
-
-/* LISTA DE PERSONAGENS*/
 .selecao-de-personagens .lista-de-personagens{
     display: flex;
     flex-wrap: wrap;
@@ -129,12 +109,12 @@ main{
 
 .selecao-de-personagens .lista-de-personagens .personagem.selecionado{
     border: 2px solid var(--cor-azul-media);
-    animation:  c-glowing-blue .3s ease-in-out infinite;
+    animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem:hover {
-    animation:  c-glowing-blue .3s ease-in-out infinite;
+.selecao-de-personagens .lista-de-personagens .personagem:hover{
+    animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
     transform: scale(1.07);
     z-index: 2;
@@ -142,35 +122,31 @@ main{
 
 .selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado{
     border: 2px solid var(--cor-vermelha-fraca);
-    animation:  c-glowing-red .3s ease-in-out infinite;
+    animation: c-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover {
-    animation:  c-glowing-red .3s ease-in-out infinite;
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover{    
+    animation: c-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
-    
 }
 
-
-/* Tag player 1/2*/
 .selecao-de-personagens .lista-de-personagens .personagem .tag{
-display: none;
-font-family:'Times New Roman', Times, serif ;
-position: absolute;
-top: 5px;
-left: 5px;
-color: var(--cor-azul-media);
-transition: opacity .3s ease-in-out;
-animation: text-glowing-blue .3s ease-in-out infinite;
-animation-direction: alternate;
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: var(--cor-azul-media);
+    transition: opacity .3 ease-in-out;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
 }
-
 
 .selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag{
-display: block;
-animation: text-glowing-blue  .3s ease-in-out infinite;
-animation-direction: alternate;
+    display: block;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
 }
 
 .selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag{
