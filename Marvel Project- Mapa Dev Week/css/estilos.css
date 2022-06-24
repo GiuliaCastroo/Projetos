@@ -111,7 +111,7 @@ main{
     border: 2px solid var(--cor-azul-media);
     animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
-}
+} 
 
 .selecao-de-personagens .lista-de-personagens .personagem:hover{
     animation: c-glowing-blue .3s ease-in-out infinite;
